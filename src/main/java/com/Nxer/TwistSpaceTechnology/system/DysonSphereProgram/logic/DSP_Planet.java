@@ -95,7 +95,7 @@ public enum DSP_Planet implements Serializable {
     }
 
     public static double getPlanetaryCoefficientWithDimID(int dimID) {
-        if (dimID >= 180 && dimID != 227) return OverWorld.planetaryCoefficient;
+        if (dimID >= 180 && dimID != 227) return VegaB.planetaryCoefficient;
         for (DSP_Planet planet : DSP_Planet.values()) {
             if (planet.dimensionID == dimID) {
                 return planet.planetaryCoefficient;
@@ -105,7 +105,7 @@ public enum DSP_Planet implements Serializable {
     }
 
     public static DSP_Planet getPlanetFromDimID(int dimID) {
-        if (dimID >= 180 && dimID != 227) return OverWorld;
+        if (dimID >= 180 && dimID != 227) return VegaB;
         for (DSP_Planet planet : DSP_Planet.values()) {
             if (planet.dimensionID == dimID) {
                 return planet;
