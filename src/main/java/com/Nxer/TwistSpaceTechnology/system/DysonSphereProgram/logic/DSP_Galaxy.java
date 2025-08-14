@@ -86,7 +86,7 @@ public enum DSP_Galaxy implements Serializable {
     }
 
     public static DSP_Galaxy getGalaxyFromDimID(int dimID) {
-        if (dimID >= 180 && dimID != 227) return SolarSystem;
+        if (dimID >= 180 && dimID != 227) return Vega;
 
         for (DSP_Galaxy galaxy : DSP_Galaxy.values()) {
             if (galaxy.isContainedDim(dimID)) return galaxy;
